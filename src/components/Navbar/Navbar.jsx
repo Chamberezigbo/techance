@@ -1,8 +1,6 @@
 import imageLogo from "../../assets/react.svg";
 import CustomButton from "../CustomButton/CustomButton";
-import { Route, Routes, Link } from "react-router-dom";
-import About from "../../containers/About/About";
-import Home from "../../containers/Home/Home";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
@@ -51,11 +49,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
     </>
   );
 }

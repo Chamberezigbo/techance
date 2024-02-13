@@ -1,0 +1,10 @@
+.whatSection {
+  height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+}
+.whatSectionChild {
+       background-color: #0B0E46;
+       height: 40vh;
+}

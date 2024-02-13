@@ -1,0 +1,39 @@
+.headerSection {
+  height: 90vh;
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 10rem;
+
+}
+.centerRow {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 20rem !important;
+  border: 1px solid transparent !important;
+  padding: 10px !important;
+  border-radius: 1rem ;
+  background-color: #F3A533;
+}
+
+
+/* Media query for small screens */
+@media screen and (max-width: 912px) {
+  .headerSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 10rem;
+    height: 100vh;
+  }
+
+  .card {
+    margin-top: 1rem;
+}
+}
+
