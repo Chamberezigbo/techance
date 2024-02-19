@@ -1,0 +1,65 @@
+.offerPage__headerSection {
+  height: 90vh;
+  background-color: #EFE9F4;
+}
+
+.offerPage__headerSection p {
+  text-align: center;
+   max-width: 50rem;
+  word-wrap: break-word; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-default {
+  width: 21.5rem !important;
+  border-radius: 1rem;
+  border: #5BC0EB solid 3px !important;
+  border-radius: 2rem 2rem 0rem 2rem !important;
+}
+
+.card-body__default {
+  background-color: #5BC0EB !important;
+  border-radius: 2rem 0rem 0rem 1.5rem !important;
+
+}
+
+.card-default-one {
+  width: 21.5rem !important;
+  border-radius: 1rem;
+  border: #E03616 solid 3px !important;
+  border-radius: 2rem 2rem 0rem 2rem !important;
+  color: #FEFEFE;
+}
+
+.card-body__default-one {
+  background-color: #E03616 !important;
+  border-radius: 2rem 0rem 0rem 1.5rem !important;
+}
+.offerPage__headerSection__svg{
+  background: #5BC0EB;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 912px) {
+  .offerPage__headerSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0px;
+    height: auto;
+     margin-bottom: 0rem;
+  }
+
+  .offerPage__headerSection .container {
+    padding: 10px !important;
+  }
+  
+
+  .card {
+    margin-top: 1rem;
+}
+}
+

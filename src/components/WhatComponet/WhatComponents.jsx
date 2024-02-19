@@ -1,16 +1,19 @@
 // import React from 'react'
-import styles from "./WhatComponents.module.css";
+import "./WhatComponents.css";
 
 function WhatComponents() {
   return (
     <>
-       <section className={styles.whatSection}>
-              <div className={`container-flued ${styles.whatSectionChild} `}>
-                     <div>hello</div>
-              </div>
-       </section>
+      <section className="whatSection">
+        <div className="container">
+          <p>
+            <span>"</span>
+            
+          </p>
+        </div>
+      </section>
     </>
-  )
+  );
 }
 
-export default WhatComponents
+export default WhatComponents;
