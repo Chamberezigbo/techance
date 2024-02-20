@@ -1,6 +1,8 @@
 // import React from 'react';
 import "./offerPage.css";
-import cardImage1 from "../../assets/image1.png";
+import cardImage1 from "../../assets/Frame13.png";
+import cardImage2 from "../../assets/Frame14.png";
+
 
 export default function OfferPage() {
   return (
@@ -13,7 +15,7 @@ export default function OfferPage() {
             roles has declined in the past 35 years. Out of 50% individuals in
             the industry, only 20% are women who are significantly represented,
             with only 14% in software engineering and 25% in computer science
-            related roles compared to their male counterparts. Here's how we're
+            related roles compared to their male counterparts. Heres how were
             tackling that:
           </p>
           <div className="pt-5">
@@ -27,7 +29,7 @@ export default function OfferPage() {
                       <h5 className="card-title">Card title</h5>
                       <p className="card-text">
                         Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        make up the bulk of the cards content.
                       </p>
                     </div>
                   </div>
@@ -38,12 +40,12 @@ export default function OfferPage() {
                 <div className="card-container">
                   {/* i need to make this card custom component  */}
                   <div className="card card-default-one">
-                    <img src={cardImage1} className="card-img-top" alt="..." />
+                    <img src={cardImage2} className="card-img-top" alt="..." />
                     <div className="card-body card-body__default-one">
                       <h5 className="card-title">Card title</h5>
                       <p className="card-text">
                         Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        make up the bulk of the cards content.
                       </p>
                     </div>
                   </div>
@@ -59,7 +61,7 @@ export default function OfferPage() {
                       <h5 className="card-title">Card title</h5>
                       <p className="card-text">
                         Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        make up the bulk of the cards content.
                       </p>
                     </div>
                   </div>

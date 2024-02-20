@@ -1,7 +1,7 @@
 // import React from 'react'
 import Navbar from "../Navbar/Navbar";
 import "./Header.css";
-import imageLogo from "../../assets/Frame 12.png";
+import imageLogo from "../../assets/Frame12.png";
 import asterisk from "../../assets/Vector.png";
 import CustomButton from "../CustomButton/CustomButton";
 
@@ -28,14 +28,10 @@ export default function Header() {
             </div>
             <div className="col-lg-6 ">
               <div className="image-section-parent1">
-                <div className="image-section">
                   <img src={asterisk} alt="Your Alt Text" width={500} />
-                </div>
               </div>
               <div className="image-section-parent">
-                <div className="image-section">
                   <img src={imageLogo} alt="Your Alt Text" width={400} />
-                </div>
               </div>
             </div>
           </div>

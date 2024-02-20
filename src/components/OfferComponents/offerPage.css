@@ -12,10 +12,10 @@
 }
 
 .card-default {
-  width: 21.5rem !important;
+  width: 22rem !important;
   border-radius: 1rem;
   border: #5BC0EB solid 3px !important;
-  border-radius: 2rem 2rem 0rem 2rem !important;
+  border-radius: 3.6rem 3.6rem 0rem 2rem !important;
 }
 
 .card-body__default {
@@ -25,10 +25,8 @@
 }
 
 .card-default-one {
-  width: 21.5rem !important;
-  border-radius: 1rem;
-  border: #E03616 solid 3px !important;
-  border-radius: 2rem 2rem 0rem 2rem !important;
+  width: 22rem !important;
+  border-radius: 3.5rem 3.5rem 0rem 2rem !important;
   color: #FEFEFE;
 }
 

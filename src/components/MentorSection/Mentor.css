@@ -1,0 +1,20 @@
+.mentorSection__header {
+  background-color: #090446;
+  height: 50vh;
+  color: #fff;
+    overflow: hidden; /* Ensure content doesn't overflow vertically */
+}
+
+.mentor-content {
+  max-height: 50vh; /* Set a maximum height for the content */
+  overflow-y: auto; /* Add vertical scroll if content exceeds the maximum height */
+}
+
+.mentor-background {
+  margin: 0px;
+  padding: 0px;
+  background: url("../../assets/ada-rect.fa0e291545af80174499.jpg.png");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
