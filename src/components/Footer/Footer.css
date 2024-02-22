@@ -1,0 +1,17 @@
+.footerSection__header {
+  background-color: #efe9f4;
+}
+
+.footerSection__header p {
+  font-size: 12px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 912px) {
+  .footerSection__header .row {
+    text-align: center;
+  }
+  .footerSection__header img {
+    margin-bottom: 20px;
+  }
+}

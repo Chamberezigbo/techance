@@ -8,7 +8,7 @@ export default function OfferPage() {
   return (
     <>
       <section className="offerPage__headerSection">
-        <div className="container px-5">
+        <div className="container px-lg-5">
           <h1 className="text-center">What we do?</h1>
           <p className="mt-2 text-center">
             According to Data from Accenture, the ratio of women to men in tech

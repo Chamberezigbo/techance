@@ -1,14 +1,15 @@
-import imageLogo from "../../assets/react.svg";
+import imageLogo from "../../assets/Logonavbar.png";
 import CustomButton from "../CustomButton/CustomButton";
 import { Link } from "react-router-dom";
+import "./Navbar.css"
+
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
         <div className="container px-5">
           <Link to="/" className="navbar-brand">
-            <img src={imageLogo} width={30} height={24} />
-            Navbar scroll
+            <img src={imageLogo} width={100}/>
           </Link>
           <button
             className="navbar-toggler"
@@ -27,7 +28,7 @@ export default function Navbar() {
               style={{ "--bs-scroll-height": "100px" }}
             >
               <li className="nav-item">
-                <Link to="/about" className="nav-link active">
+                <Link to="/about" className="nav-link">
                   About us
                 </Link>
               </li>
@@ -43,8 +44,8 @@ export default function Navbar() {
               </li>
             </ul>
             <ul className="d-flex my-2 my-lg-0" role="search">
-              <CustomButton color="#F5B133" content="Our Events" />
-              <CustomButton color="#0B0E46" content="For women" />
+              <CustomButton color="#5BC0EB" content="Our Events" />
+              <CustomButton color="#FEFEFE" content="For women" />
             </ul>
           </div>
         </div>

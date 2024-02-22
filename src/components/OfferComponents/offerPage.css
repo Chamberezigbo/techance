@@ -1,12 +1,12 @@
 .offerPage__headerSection {
   height: 90vh;
-  background-color: #EFE9F4;
+  background-color: #efe9f4;
 }
 
 .offerPage__headerSection p {
   text-align: center;
-   max-width: 50rem;
-  word-wrap: break-word; 
+  max-width: 50rem;
+  word-wrap: break-word;
   margin-left: auto;
   margin-right: auto;
 }
@@ -14,28 +14,27 @@
 .card-default {
   width: 22rem !important;
   border-radius: 1rem;
-  border: #5BC0EB solid 3px !important;
+  border: #5bc0eb solid 3px !important;
   border-radius: 3.6rem 3.6rem 0rem 2rem !important;
 }
 
 .card-body__default {
-  background-color: #5BC0EB !important;
+  background-color: #5bc0eb !important;
   border-radius: 2rem 0rem 0rem 1.5rem !important;
-
 }
 
 .card-default-one {
   width: 22rem !important;
   border-radius: 3.5rem 3.5rem 0rem 2rem !important;
-  color: #FEFEFE;
+  color: #fefefe;
 }
 
 .card-body__default-one {
-  background-color: #E03616 !important;
+  background-color: #e03616 !important;
   border-radius: 2rem 0rem 0rem 1.5rem !important;
 }
-.offerPage__headerSection__svg{
-  background: #5BC0EB;
+.offerPage__headerSection__svg {
+  background: #5bc0eb;
 }
 
 /* Media query for small screens */
@@ -44,20 +43,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0px;
     height: auto;
-     margin-bottom: 0rem;
+    margin-bottom: 0rem;
   }
-
-  .offerPage__headerSection .container {
-    padding: 10px !important;
-  }
-  
 
   .card {
     margin-top: 1rem;
+  }
 }
-}
-

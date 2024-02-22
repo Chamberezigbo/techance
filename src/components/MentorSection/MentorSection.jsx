@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./Mentor.css";
 import CustomButton from "../CustomButton/CustomButton";
 
@@ -14,7 +14,7 @@ function MentorSection() {
               <p>
                      Build confidence as a leader,grow your network and define your legacy
               </p>
-              <CustomButton color="#F5B133" content="Become a mentor" />
+              <CustomButton color="#FEFEFE" content="Become a mentor" />
         </div>
 
         <div className="col-lg-3 mentor-background">

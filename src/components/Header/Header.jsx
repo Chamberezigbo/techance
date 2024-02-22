@@ -23,7 +23,7 @@ export default function Header() {
                 Lorem ipsum dolor sit amet consectetur.{" "}
               </p>
               <div className="text-center text-lg-start">
-                <CustomButton color="#F5B133" content="Get Started" />
+                <CustomButton color="#5BC0EB" content="Get Started" />
               </div>
             </div>
             <div className="col-lg-6 ">

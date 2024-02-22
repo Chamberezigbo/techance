@@ -1,0 +1,19 @@
+.navbar{
+       background: #090446 !important;
+}
+
+/* Navbar.css */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-collapse {
+  animation: fadeInDown 0.5s ease-in-out;
+}
