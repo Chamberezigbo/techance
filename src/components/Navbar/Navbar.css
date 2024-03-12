@@ -1,6 +1,69 @@
-.navbar{
-       background: #090446 !important;
+.dropdown__header {
+  background-color: #EFE9F4;
+  height: 30vh;
+  overflow: hidden; /* Ensure content doesn't overflow vertically */
 }
+
+.container-kids{
+  border: #090446 1px solid;
+  padding-left: 20px;
+  width: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.container-kids:hover {
+  background: bisque;
+}
+.container-kids h5{
+  color: #090446;
+}
+
+.container-her{
+  border: #E03616 1px solid;
+  padding-left: 20px;
+  width: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.container-her h5 span {
+  color: #090446;
+}
+.container-her:hover {
+  background: bisque;
+}
+
+.container-volunteer{
+  border: #F5A503 1px solid;
+  padding-left: 20px;
+  width: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.container-volunteer:hover {
+  background: bisque;
+}
+
+.container-collaborate{
+  border: #5BC0EB 1px solid;
+  padding-left: 20px;
+  width: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.container-collaborate:hover {
+  background: bisque;
+}
+
+.arrow {
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow.active {
+  transform: rotate(180deg);
+}
+
 
 /* Navbar.css */
 @keyframes fadeInDown {
@@ -16,4 +79,16 @@
 
 .navbar-collapse {
   animation: fadeInDown 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 912px) {
+  .dropdown__header {
+  height: auto;
+  overflow: hidden; /* Ensure content doesn't overflow vertically */
+  padding-bottom: 10px;
+  }
+  .row{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }

@@ -1,0 +1,124 @@
+.about__header > h2 {
+  color: #090446;
+  font-size: 60px;
+  font-family: monospace;
+}
+
+.about__content {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.about__team {
+  background: #efe9f4;
+  height: fit-content;
+  padding-top: 5rem;
+  padding-bottom: 0.1rem;
+}
+
+.team_content {
+  margin-left: auto;
+  text-align: right;
+  width: 35%;
+}
+
+.team_content > h2 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #090446;
+  word-wrap: break-word;
+}
+
+.team_content p {
+  font-size: 13px;
+  font-family: monospace;
+  color: #090446;
+  word-wrap: break-word;
+}
+.team-card {
+  height: 30vh;
+  background-color: #ffff;
+}
+
+.svg_kickSection{
+  background: #5BC0EB;
+}
+
+.kickSection__header{
+  background: #5BC0EB;
+  height: 71vh;
+  position: relative;
+}
+.kickSection__header .row {
+  padding: 0px 15rem;
+}
+
+.kickSection_content{
+  color: #ffff;
+  padding-top: 10rem;
+}
+
+.kickSection__image-section-parent1 {
+
+}
+
+.kickSection__image-section-parent {
+  position: absolute;
+  top: 33%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media query for small screens */
+@media (max-width: 1023px) {
+  .team_content {
+    width: 70%; /* Adjust the width for small screens */
+  }
+    .kickSection__image-section-parent {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 767px) {
+  .about__header > h2 {
+    font-size: 40px; /* Adjust the font size for extra small screens */
+  }
+
+  .about__content {
+    font-size: 16px; /* Adjust the font size for extra small screens */
+  }
+
+  .team_content {
+    width: 100%; /* Adjust the width for extra small screens */
+  }
+
+  .team_content > h2 {
+    font-size: 35px;
+  }
+
+    .kickSection__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0px;
+    height: 50vh;
+    margin-bottom: 0rem;
+  }
+  .kickSection__header .row {
+  padding: 0px;
+}
+
+
+  .kickSection__image-section-parent {
+    display: none; /* Hide on small screens */
+  }
+  .kickSection__image-section-parent1 {
+    display: none; /* Hide on small screens */
+  }
+}

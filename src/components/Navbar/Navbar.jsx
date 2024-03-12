@@ -1,15 +1,22 @@
-import imageLogo from "../../assets/Logonavbar.png";
+import { useState } from "react";
+import imageLogo from "../../assets/mainlogo.png";
 import CustomButton from "../CustomButton/CustomButton";
 import { Link } from "react-router-dom";
-import "./Navbar.css"
+import "./Navbar.css";
+import Dropdown from "./Dropdown";
 
 export default function Navbar() {
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const toggleDropdown = () => {
+    setDropdownVisible((prevState) => !prevState);
+  };
+
   return (
     <>
-      <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div className="container px-5">
           <Link to="/" className="navbar-brand">
-            <img src={imageLogo} width={100}/>
+            <img src={imageLogo} width={100} />
           </Link>
           <button
             className="navbar-toggler"
@@ -33,9 +40,18 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/programs" className="nav-link">
+                <div
+                  className="nav-link"
+                  onClick={toggleDropdown}
+                  style={{ cursor: "pointer" }}
+                >
                   Programs
-                </Link>
+                  {isDropdownVisible ? (
+                    <span className="arrow">&#9650;</span>
+                  ) : (
+                    <span className="arrow">&#9660;</span>
+                  )}
+                </div>
               </li>
               <li className="nav-item">
                 <Link to="/volunteers" className="nav-link">
@@ -44,12 +60,13 @@ export default function Navbar() {
               </li>
             </ul>
             <ul className="d-flex my-2 my-lg-0" role="search">
-              <CustomButton color="#5BC0EB" content="Our Events" />
-              <CustomButton color="#FEFEFE" content="For women" />
+              <CustomButton color="#F5A503" content="Our Events" />
+              {/* <CustomButton color="#FEFEFE" content="For women" /> */}
             </ul>
           </div>
         </div>
       </nav>
+      {isDropdownVisible && <Dropdown />}
     </>
   );
 }

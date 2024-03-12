@@ -2,7 +2,7 @@
 import Navbar from "../Navbar/Navbar";
 import "./Header.css";
 import imageLogo from "../../assets/Frame12.png";
-import asterisk from "../../assets/Vector.png";
+import asterisk from "../../assets/Vector-yellow.png";
 import CustomButton from "../CustomButton/CustomButton";
 
 export default function Header() {

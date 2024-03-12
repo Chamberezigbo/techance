@@ -11,6 +11,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Volunteers from "./routes/Volunteers/Volunteers.jsx";
+import Kids from "./routes/Kids/Kids.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/volunteers",
+    element: <Volunteers/>,
+  },
+  {
+    path: "/kids",
+    element: <Kids/>,
   }
 ]);
 
