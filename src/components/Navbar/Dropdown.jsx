@@ -21,7 +21,7 @@ function Dropdown() {
                 </Link>
               </div>
               <div className="col-lg-6 mt-lg-0 mt-3">
-                <Link className="nav-link">
+                <Link className="nav-link" to="/her">
                   <div className="container-her ms-lg-3 pt-2">
                     <h5 className="text-danger">
                       Techance <span className="text-italic">For Her</span>

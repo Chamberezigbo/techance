@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import Volunteers from "./routes/Volunteers/Volunteers.jsx";
 import Kids from "./routes/Kids/Kids.jsx";
+import Her from "./routes/Her/Her.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/kids",
     element: <Kids/>,
+  },
+    {
+    path: "/her",
+    element: <Her/>,
   }
 ]);
 

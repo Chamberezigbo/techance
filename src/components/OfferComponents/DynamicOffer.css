@@ -1,0 +1,27 @@
+.DynamicOfferPage__headerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+ background-color: #efe9f4;
+ margin-left: auto;
+}
+
+.DynamicOfferPage__headerSection p {
+  text-align: center;
+  max-width: 50rem;
+  word-wrap: break-word;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.DynamicOfferPage__svg{
+       background: #5BC0EB;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 912px) {
+  .DynamicOfferPage__headerSection {
+
+  }
+}

@@ -1,0 +1,78 @@
+.FAQ__Section__header {
+  background-color: #efe9f4;
+  height: 50vh;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-lg-12{
+  width: 40rem;
+}
+
+
+.card {
+  background-color: #090446;
+  color: #fff;
+  text-align: center;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between; /* Place the content and toggler at opposite ends */
+  align-items: center; /* Center the content vertically */
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border-bottom: #fff solid 2px;
+}
+
+.card-header > .card-header-content {
+  flex-grow: 1; /* Allow the content to expand to fill available space */
+}
+
+.card-header > .card-header-toggler {
+  margin-left: auto; /* Push the toggler to the right */
+}
+
+.card-header.active {
+  width: auto; /* Allow the header to expand to fit the content */
+}
+
+.box-toggler:hover {
+  background-color: darkblue;
+}
+
+.box-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  background-color: #090446;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.box-content.open {
+  max-height: 1000px; /* Adjust this value to match the maximum height of your content */
+}
+
+.toggle-indicator {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.open .toggle-indicator {
+  transform: rotate(45deg);
+}
+
+/* Media query for extra small screens */
+@media (max-width: 767px) {
+  .col-lg-12{
+    width: 20rem;
+  }
+}

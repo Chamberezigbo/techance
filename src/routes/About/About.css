@@ -40,12 +40,12 @@
   background-color: #ffff;
 }
 
-.svg_kickSection{
-  background: #5BC0EB;
+.svg_kickSection {
+  background: #5bc0eb;
 }
 
-.kickSection__header{
-  background: #5BC0EB;
+.kickSection__header {
+  background: #5bc0eb;
   height: 71vh;
   position: relative;
 }
@@ -53,13 +53,12 @@
   padding: 0px 15rem;
 }
 
-.kickSection_content{
+.kickSection_content {
   color: #ffff;
   padding-top: 10rem;
 }
 
 .kickSection__image-section-parent1 {
-
 }
 
 .kickSection__image-section-parent {
@@ -74,7 +73,7 @@
   .team_content {
     width: 70%; /* Adjust the width for small screens */
   }
-    .kickSection__image-section-parent {
+  .kickSection__image-section-parent {
     position: absolute;
     top: 50%;
     left: 75%;
@@ -100,7 +99,7 @@
     font-size: 35px;
   }
 
-    .kickSection__header{
+  .kickSection__header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,9 +110,8 @@
     margin-bottom: 0rem;
   }
   .kickSection__header .row {
-  padding: 0px;
-}
-
+    padding: 0px;
+  }
 
   .kickSection__image-section-parent {
     display: none; /* Hide on small screens */
