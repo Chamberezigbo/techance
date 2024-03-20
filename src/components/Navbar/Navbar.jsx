@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import imageLogo from "../../assets/mainlogo.png";
 import CustomButton from "../CustomButton/CustomButton";
 import { Link } from "react-router-dom";
@@ -7,6 +7,21 @@ import Dropdown from "./Dropdown";
 
 export default function Navbar() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
+  
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.navbar') && isDropdownVisible) {
+        setDropdownVisible(false);
+      }
+    };
+
+    document.body.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.body.removeEventListener('click', handleClickOutside);
+    };
+  }, [isDropdownVisible]);
+
   const toggleDropdown = () => {
     setDropdownVisible((prevState) => !prevState);
   };

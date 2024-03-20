@@ -8,6 +8,7 @@ import DynamicOffer from "../../components/OfferComponents/DynamicOffer";
 import HowComponent from "../../components/HowComponent/HowComponent";
 import howComponentImage from "../../assets/kids-learning-about-universe1.png";
 import FaqComponent from "../../components/FAQ/FaqComponent";
+import Footer from "../../components/Footer/Footer";
 
 function Kids() {
   const titleLines = ["Lorem", "ipsum", "dolor sit"];
@@ -24,6 +25,7 @@ function Kids() {
         buttonColor="#090446"
         textColor="#E03616"
         ImageWidth="500"
+        svgColor="#5BC0EB"
       />
       <DynamicOffer
         title="What is Techance FOR KIDS"
@@ -79,7 +81,7 @@ function Kids() {
           // Add more questions as needed
         ]}
       />
-      <footer />
+      <Footer/>
     </>
   );
 }

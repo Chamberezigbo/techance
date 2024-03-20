@@ -25,6 +25,7 @@ function Her() {
         buttonColor="#090446"
         textColor="#090446"
         ImageWidth="650"
+        svgColor="#5BC0EB"
       />
       <DynamicOffer
         title="What is Techance For Her"

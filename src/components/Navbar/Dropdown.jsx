@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Dropdown() {
   return (
     <>
-      <section className="dropdown__header">
+      <section className="dropdown__header sticky-top ">
         <div className="container">
           <div className="d-flex justify-content-center pt-5">
             <div className="row">
@@ -36,7 +36,7 @@ function Dropdown() {
           <div className="d-flex justify-content-center pt-2">
             <div className="row">
               <div className="col-lg-6">
-                <Link className="nav-link">
+                <Link className="nav-link" to="/volunteers">
                   <div className="container-volunteer pt-2">
                     <h5 className="text-warning">Volunteer</h5>
                     <h6>Help us to help people</h6>
