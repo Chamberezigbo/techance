@@ -3,7 +3,6 @@ import "./offerPage.css";
 import cardImage1 from "../../assets/Frame13.png";
 import cardImage2 from "../../assets/Frame14.png";
 
-
 export default function OfferPage() {
   return (
     <>
@@ -11,12 +10,12 @@ export default function OfferPage() {
         <div className="container px-lg-5">
           <h1 className="text-center">What we do?</h1>
           <p className="mt-2 text-center">
-            According to Data from Accenture, the ratio of women to men in tech
-            roles has declined in the past 35 years. Out of 50% individuals in
-            the industry, only 20% are women who are significantly represented,
-            with only 14% in software engineering and 25% in computer science
-            related roles compared to their male counterparts. Heres how were
-            tackling that:
+            Welcome to Techance, where we believe in the transformative power of
+            technology to shape a brighter future. Established as a non-profit
+            organization, Techance is dedicated to empowering individuals of all
+            ages and backgrounds through accessible and innovative technology
+            education. Our mission is to bridge the digital divide, foster
+            inclusivity, and inspire a new generation of tech enthusiasts.
           </p>
           <div className="pt-5">
             <div className="row">
@@ -26,10 +25,11 @@ export default function OfferPage() {
                   <div className="card card-default">
                     <img src={cardImage1} className="card-img-top" alt="..." />
                     <div className="card-body card-body__default">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">For Her</h5>
                       <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the cards content.
+                        To empower and encourage women to explore, learn, and
+                        excel in technology by providing a supportive learning
+                        environment, mentorship, and resources.
                       </p>
                     </div>
                   </div>
@@ -42,10 +42,11 @@ export default function OfferPage() {
                   <div className="card card-default-one">
                     <img src={cardImage2} className="card-img-top" alt="..." />
                     <div className="card-body card-body__default-one">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">For Kids</h5>
                       <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the cards content.
+                        To ignite a passion for technology in children,
+                        fostering a love for learning, creativity, and
+                        innovation from an early age.
                       </p>
                     </div>
                   </div>
@@ -58,10 +59,12 @@ export default function OfferPage() {
                   <div className="card card-default">
                     <img src={cardImage1} className="card-img-top" alt="..." />
                     <div className="card-body card-body__default">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">Collaborate</h5>
                       <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the cards content.
+                        To bridge the gap between tech education and real-world
+                        application by providing individuals with the
+                        opportunity to work on practical projects, guided by
+                        experienced mentors.
                       </p>
                     </div>
                   </div>
@@ -71,7 +74,17 @@ export default function OfferPage() {
           </div>
         </div>
       </section>
-        <svg className="offerPage__headerSection__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#efe9f4" fillOpacity="1" d="M0,96L80,117.3C160,139,320,181,480,181.3C640,181,800,139,960,138.7C1120,139,1280,181,1360,202.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+      <svg
+        className="offerPage__headerSection__svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#efe9f4"
+          fillOpacity="1"
+          d="M0,96L80,117.3C160,139,320,181,480,181.3C640,181,800,139,960,138.7C1120,139,1280,181,1360,202.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+        ></path>
+      </svg>
     </>
   );
 }

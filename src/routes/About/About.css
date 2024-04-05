@@ -47,11 +47,22 @@
 .kickSection__header {
   background: #5bc0eb;
   height: 71vh;
-  position: relative;
 }
-.kickSection__header .row {
+.kickSection__carousel-item {
+  background-color: #efe9f4; /* Set the background color here */
+  height: auto; /* Ensure the carousel items fill the height of the parent container */
+}
+
+.Testimonial-Image {
+  width: 10% !important;
+  object-fit: cover;
+}
+
+
+
+/* .kickSection__header .row {
   padding: 0px 15rem;
-}
+} */
 
 .kickSection_content {
   color: #ffff;

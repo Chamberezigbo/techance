@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import imageLogo from "../../assets/mainlogo.png";
-import CustomButton from "../CustomButton/CustomButton";
+// import CustomButton from "../CustomButton/CustomButton";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
@@ -75,7 +75,7 @@ export default function Navbar() {
               </li>
             </ul>
             <ul className="d-flex my-2 my-lg-0" role="search">
-              <CustomButton color="#F5A503" content="Our Events" />
+              {/* <CustomButton color="#F5A503" content="Our Events" /> */}
               {/* <CustomButton color="#FEFEFE" content="For women" /> */}
             </ul>
           </div>

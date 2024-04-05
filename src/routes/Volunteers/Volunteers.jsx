@@ -9,12 +9,12 @@ import Footer from "../../components/Footer/Footer";
 import DynamicWhatComponent from "../../components/OfferComponents/DynamicOfferVolunter";
 
 export default function Volunteers() {
-    const titleLines = ["Lorem", "ipsum", "dolor sit"];
+  const titleLines = ["Join us ", "on this", "journey"];
   const subtitle = "Volunteer";
 
   return (
     <>
-             <Navbar />
+      <Navbar />
       <HeaderKids
         image={imageLogo}
         secondImage={secondImage}
@@ -28,11 +28,11 @@ export default function Volunteers() {
       />
       <DynamicOffer
         title="WE NEED YOUR HELP"
-        subtitle="According to Data from Accenture, the ratio of women to men in tech roles has declined..."
+        subtitle="Whether you're a seasoned professional looking to give back, a curious learner eager to explore the world of tech, or a parent seeking engaging opportunities for your child, Techance invites you to join our community. Together, let's build a future where technology is a force for inclusivity, innovation, and positive change."
         buttonColor="#E03616"
         coloredText="#E03616"
       />
-      <DynamicWhatComponent/>
+      <DynamicWhatComponent />
       <FaqComponent
         questions={[
           {
@@ -50,7 +50,7 @@ export default function Volunteers() {
           // Add more questions as needed
         ]}
       />
-      <Footer/>
+      <Footer />
     </>
-  )
+  );
 }

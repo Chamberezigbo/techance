@@ -29,10 +29,31 @@
 
 .visionSection__header{
   background: #EFE9F4;
-  height: 71vh;
-  position: relative;
+  height: 50vh;
+
 }
-.visionSection__header .row {
+
+.visionSection__header .card-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+.card {
+  flex: 1; /* Allow the card to expand to fill the container */
+}
+
+.inline-list {
+  padding: 0;
+  list-style: none;
+}
+
+.inline-list li {
+  display: inline;
+  margin-right: 10px; /* Adjust this value based on your preference */
+}
+
+/* .visionSection__header .row {
   padding: 0px 15rem;
 }
 
@@ -45,7 +66,7 @@
   top: 33%;
   left: 64%;
   transform: translate(-50%, -50%);
-}
+} */
 
 @media (max-width: 1092px) {
   .visionSection__image-section-parent {

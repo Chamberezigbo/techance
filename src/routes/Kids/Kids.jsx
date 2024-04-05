@@ -11,8 +11,8 @@ import FaqComponent from "../../components/FAQ/FaqComponent";
 import Footer from "../../components/Footer/Footer";
 
 function Kids() {
-  const titleLines = ["Lorem", "ipsum", "dolor sit"];
-  const subtitle = "FOR KIDS";
+  const titleLines = ["To ignite a", "passion for", "technology"];
+  const subtitle = "In Children";
   return (
     <>
       <Navbar />
@@ -29,7 +29,7 @@ function Kids() {
       />
       <DynamicOffer
         title="What is Techance FOR KIDS"
-        subtitle="According to Data from Accenture, the ratio of women to men in tech roles has declined..."
+        subtitle="fostering a love for learning, creativity, and innovation from an early age."
         buttonColor="#E03616"
         coloredText="#E03616"
       />
@@ -39,24 +39,24 @@ function Kids() {
         ImageWidth="600"
         items={[
           {
-            title: "Assignment",
+            title: "Interactive Workshops",
             subtitle:
-              "Take our qualifying assessment to gauge your skills and potential.",
+              "Organize hands-on workshops and activities to make learning tech concepts fun and interactive.",
           },
           {
-            title: "Assignment",
+            title: "Age-Appropriate Curriculum",
             subtitle:
-              "Take our qualifying assessment to gauge your skills and potential.",
+              "Develop an age-appropriate tech curriculum that aligns with children's developmental stages.",
           },
           {
-            title: "Assignment",
+            title: "Parental Involvement",
             subtitle:
-              "Take our qualifying assessment to gauge your skills and potential.",
+              "Encourage parental involvement in children's tech education, fostering a supportive learning environment at home.",
           },
           {
-            title: "Assignment",
+            title: "Tech Challenges and Competitions",
             subtitle:
-              "Take our qualifying assessment to gauge your skills and potential.",
+              "Organize age-appropriate tech challenges and competitions to stimulate friendly competition and learning.",
           },
         ]}
         buttonColor="#090446"
@@ -67,16 +67,16 @@ function Kids() {
       <FaqComponent
         questions={[
           {
-            question: "How much is it?",
-            title: "Special title treatment",
+            question: "Tech Challenges and Competitions?",
+            title: "Tech challenges and competitions",
             content:
-              "With supporting text below as a natural lead-in to additional content.",
+              "Challenges will be structured with varying difficulty levels to accommodate different skill levels and age groups.",
           },
           {
-            question: "How much is it?",
-            title: "Special title treatment",
+            question: "Parental Involvement?",
+            title: "Parents are encouraged to participate in workshops, attend parent-teacher meetings, and engage in discussions about their child's progress.",
             content:
-              "With supporting text below as a natural lead-in to additional content.",
+              "Resources such as informative sessions, webinars, and online forums will be available for parents to learn more about technology education and how to support their child's learning at home.",
           },
           // Add more questions as needed
         ]}

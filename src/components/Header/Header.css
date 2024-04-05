@@ -16,12 +16,6 @@
   letter-spacing: 0.4px; /* You can adjust this value based on your preference */
   text-align: left;
 }
-
-.line-break {
-  display: inline-block;
-  margin-right: 5px; /* You can adjust this margin based on your preference */
-}
-
 .image-section-parent1 {
   margin-top: -7rem;
 }
@@ -62,10 +56,6 @@
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.2px;
-  }
-
-  .line-break {
-    margin-right: 1px;
   }
 
   .image-section-parent {

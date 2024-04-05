@@ -11,7 +11,7 @@ import FaqComponent from "../../components/FAQ/FaqComponent";
 import Footer from "../../components/Footer/Footer";
 
 function Her() {
-  const titleLines = ["Lorem", "ipsum", "dolor sit"];
+  const titleLines = ["To empower and ", "encourage women", "to explore, learn"];
   const subtitle = "For Her";
   return (
     <>
@@ -29,7 +29,7 @@ function Her() {
       />
       <DynamicOffer
         title="What is Techance For Her"
-        subtitle="According to Data from Accenture, the ratio of women to men in tech roles has declined..."
+        subtitle="excel in technology by providing a supportive learning environment, mentorship, and resources."
         buttonColor="#090446"
         coloredText="#F5A503"
       />
@@ -39,24 +39,24 @@ function Her() {
         ImageWidth="400"
         items={[
           {
-            title: "Assignment",
+            title: "Women in Tech Events",
             subtitle:
-              "Take our qualifying assessment to gauge your skills and potential.",
+              "Organize events that highlight and celebrate the achievements of women in the tech industry.",
           },
           {
-            title: "Assignment",
+            title: "Skill Workshops",
             subtitle:
-              "Take our qualifying assessment to gauge your skills and potential.",
+              "Offer workshops and training programs tailored to the needs and interests of women in tech.",
           },
           {
-            title: "Assignment",
+            title: "Mentorship Programs",
             subtitle:
-              "Take our qualifying assessment to gauge your skills and potential.",
+              "Establish mentorship programs to connect women with experienced mentors in their desired tech fields.",
           },
           {
-            title: "Assignment",
+            title: "Community Support",
             subtitle:
-              "Take our qualifying assessment to gauge your skills and potential.",
+              "Provide a supportive online and offline community where women can share experiences, insights, and opportunities.",
           },
         ]}
         buttonColor="#090446"
@@ -67,16 +67,16 @@ function Her() {
       <FaqComponent
         questions={[
           {
-            question: "How much is it?",
-            title: "Special title treatment",
+            question: "What types of events do you organize for women in tech?",
+            title: "Events for women in tech",
             content:
-              "With supporting text below as a natural lead-in to additional content.",
+              "We organize a variety of events that highlight and celebrate the achievements of women in the tech industry. These events include panel discussions, networking sessions, hackathons, and keynote presentations featuring successful women in tech.",
           },
          {
-            question: "How much is it?",
-            title: "Special title treatment",
+            question: "How do you tailor your workshops and training programs to the needs and interests of women in tech?",
+            title: "Workshops for women in tech",
             content:
-              "With supporting text below as a natural lead-in to additional content.",
+              "Our workshops and training programs are designed based on feedback and input from women in the tech community. We conduct surveys and focus groups to understand their specific needs and interests, ensuring that the content is relevant, practical, and empowering.",
           },
           // Add more questions as needed
         ]}

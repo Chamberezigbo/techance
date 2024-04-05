@@ -3,9 +3,8 @@
 // component imported//
 import Navbar from "../../components/Navbar/Navbar";
 import "./About.css";
-import asterisk from "../../assets/Vector2.png";
 import image from "../../assets/Frame1.png";
-import CustomButton from "../../components/CustomButton/CustomButton";
+// import CustomButton from "../../components/CustomButton/CustomButton";
 import Footer from "../../components/Footer/Footer";
 
 export default function About() {
@@ -16,19 +15,14 @@ export default function About() {
         <div className="container">
           <div className="about__header mt-lg-5 pt-5">
             <h2>About Us</h2>
-            <p className="text-danger">What is Techance</p>
+            <p className="text-danger">What set us apart</p>
             <p className="about__content">
-              According to Data from Accenture, the ratio of women to men in
-              tech roles has declined in the past 35 years. Out of 50%
-              individuals in the industry, only 20% are women who are
-              significantly represented, with only 14% in software engineering
-              and 25% in computer science related roles compared to their male
-              counterparts. According to Data from Accenture, the ratio of women
-              to men in tech roles has declined in the past 35 years. Out of 50%
-              individuals in the industry, only 20% are women who are
-              significantly represented, with only 14% in software engineering
-              and 25% in computer science related roles compared to their male
-              counterparts. Here&apos;s how we&apos;re tackling that:
+              Techance is more than just a learning platform. We are a
+              community-driven organization that values the journey of each
+              individual in our network. From Tech Titans inspiring the youngest
+              minds to Her Techance empowering women in tech, and Techtrans
+              guiding enthusiasts from learning to application — we are
+              committed to making a lasting impact.
             </p>
           </div>
         </div>
@@ -80,7 +74,7 @@ export default function About() {
             d="M0,96L40,117.3C80,139,160,181,240,197.3C320,213,400,203,480,186.7C560,171,640,149,720,144C800,139,880,149,960,176C1040,203,1120,245,1200,250.7C1280,256,1360,224,1400,208L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
           ></path>
         </svg>
-        <section className="kickSection__header">
+        {/* <section className="kickSection__header">
           <div className="container">
             <div className="row">
               <div className="col-lg-6 kickSection_content">
@@ -103,9 +97,111 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <div
+          id="carouselExampleControls"
+          className="carousel slide kickSection__header"
+          data-bs-ride="carousel"
+        >
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <div className="container">
+                <div className="row justify-content-center kickSection_content">
+                  <div className="col-lg-6">
+                    <div className="card">
+                      <img
+                        src={image}
+                        className="card-img-top rounded-circle mx-auto d-block Testimonial-Image"
+                        alt="Testimonial Image"
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">John Doe</h5>
+                        <p className="card-text">
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Ut consequat diam quis ex commodo, eu commodo
+                          elit accumsan. Proin auctor nulla vel dictum varius."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className="container">
+                <div className="row justify-content-center kickSection_content">
+                  <div className="col-lg-6">
+                    <div className="card">
+                      <img
+                        src={image}
+                        className="card-img-top rounded-circle mx-auto d-block Testimonial-Image"
+                        alt="Testimonial Image"
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">John Doe</h5>
+                        <p className="card-text">
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Ut consequat diam quis ex commodo, eu commodo
+                          elit accumsan. Proin auctor nulla vel dictum varius."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className="container">
+                <div className="row justify-content-center kickSection_content">
+                  <div className="col-lg-6">
+                    <div className="card">
+                      <img
+                        src={image}
+                        className="card-img-top rounded-circle mx-auto d-block Testimonial-Image"
+                        alt="Testimonial Image"
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">John Doe</h5>
+                        <p className="card-text">
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Ut consequat diam quis ex commodo, eu commodo
+                          elit accumsan. Proin auctor nulla vel dictum varius."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }
