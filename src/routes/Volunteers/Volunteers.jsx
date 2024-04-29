@@ -25,12 +25,14 @@ export default function Volunteers() {
         textColor="#E03616"
         ImageWidth="500"
         svgColor="#F5A503"
+        buttonLink="https://forms.gle/eXujhtEpFRUiduff8"
       />
       <DynamicOffer
         title="WE NEED YOUR HELP"
         subtitle="Whether you're a seasoned professional looking to give back, a curious learner eager to explore the world of tech, or a parent seeking engaging opportunities for your child, Techance invites you to join our community. Together, let's build a future where technology is a force for inclusivity, innovation, and positive change."
         buttonColor="#E03616"
         coloredText="#E03616"
+        buttonLink="https://forms.gle/eXujhtEpFRUiduff8"
       />
       <DynamicWhatComponent />
       <FaqComponent

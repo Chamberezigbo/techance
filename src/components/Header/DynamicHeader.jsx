@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import "./Kids.css";
 import CustomButton from "../CustomButton/CustomButton";
+import { Link } from "react-router-dom";
 
 export default function DynamicHeader({
   image,
@@ -11,7 +12,8 @@ export default function DynamicHeader({
   buttonColor,
   textColor,
   ImageWidth,
-  svgColor
+  svgColor,
+  buttonLink,
 }) {
   return (
     <>
@@ -36,7 +38,15 @@ export default function DynamicHeader({
                 {subtitle}
               </h2>
               <div className="text-center text-lg-start">
-                <CustomButton color={buttonColor} content="Get Started" />
+                {buttonLink && (
+                  <Link to={buttonLink}>
+                    <CustomButton
+                      color={buttonColor}
+                      content="Get Started"
+                      Link={buttonLink}
+                    />
+                  </Link>
+                )}
               </div>
             </div>
             <div className="col-lg-6">
@@ -51,7 +61,11 @@ export default function DynamicHeader({
           </div>
         </div>
       </section>
-      <svg className="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        className="svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
         <path
           fill={svgColor}
           fillOpacity="1"
@@ -71,5 +85,6 @@ DynamicHeader.propTypes = {
   textColor: PropTypes.string.isRequired,
   buttonColor: PropTypes.string.isRequired,
   ImageWidth: PropTypes.string.isRequired,
-  svgColor: PropTypes.string.isRequired
+  svgColor: PropTypes.string.isRequired,
+  buttonLink: PropTypes.string,
 };

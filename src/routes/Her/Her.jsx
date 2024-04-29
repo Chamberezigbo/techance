@@ -3,15 +3,19 @@
 import HeaderKids from "../../components/Header/DynamicHeader";
 import Navbar from "../../components/Navbar/Navbar";
 import imageLogo from "../../assets/Vector-yellow.png";
-import secondImage from "../../assets/image-removebg-preview-2023-10-27T1611271.png";
+import secondImage from "../../assets/forher.jpeg";
 import DynamicOffer from "../../components/OfferComponents/DynamicOffer";
 import HowComponent from "../../components/HowComponent/HowComponent";
-import howComponentImage from "../../assets/image-removebg-preview (77)1.png";
+import howComponentImage from "../../assets/herscetion.jpeg";
 import FaqComponent from "../../components/FAQ/FaqComponent";
 import Footer from "../../components/Footer/Footer";
 
 function Her() {
-  const titleLines = ["To empower and ", "encourage women", "to explore, learn"];
+  const titleLines = [
+    "To empower and ",
+    "encourage women",
+    "to explore, learn",
+  ];
   const subtitle = "For Her";
   return (
     <>
@@ -24,7 +28,7 @@ function Her() {
         sectionColor="#5BC0EB"
         buttonColor="#090446"
         textColor="#090446"
-        ImageWidth="650"
+        ImageWidth="400"
         svgColor="#5BC0EB"
       />
       <DynamicOffer
@@ -72,8 +76,9 @@ function Her() {
             content:
               "We organize a variety of events that highlight and celebrate the achievements of women in the tech industry. These events include panel discussions, networking sessions, hackathons, and keynote presentations featuring successful women in tech.",
           },
-         {
-            question: "How do you tailor your workshops and training programs to the needs and interests of women in tech?",
+          {
+            question:
+              "How do you tailor your workshops and training programs to the needs and interests of women in tech?",
             title: "Workshops for women in tech",
             content:
               "Our workshops and training programs are designed based on feedback and input from women in the tech community. We conduct surveys and focus groups to understand their specific needs and interests, ensuring that the content is relevant, practical, and empowering.",
@@ -81,7 +86,7 @@ function Her() {
           // Add more questions as needed
         ]}
       />
-      <Footer/>
+      <Footer />
     </>
   );
 }

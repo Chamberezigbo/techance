@@ -1,13 +1,30 @@
 // import React from 'react'
-
+import { useState } from "react";
 // component imported//
 import Navbar from "../../components/Navbar/Navbar";
 import "./About.css";
-import image from "../../assets/Frame1.png";
-// import CustomButton from "../../components/CustomButton/CustomButton";
+import image from "../../assets/testimony1.jpeg";
+import image1 from "../../assets/testimony2.jpeg";
+//
 import Footer from "../../components/Footer/Footer";
 
 export default function About() {
+  const [testimonials] = useState([
+    {
+      name: "Faith Ogbevire",
+      message:
+        "Being part of Techance has been an amazing experience! It's been eye-opening, and I've learned so much. The community is filled with tech enthusiasts who keep me motivated. Through Techance, I've gained valuable hands-on experience in technical project management, which has boosted my skills and career opportunities. I definitely recommend Techance to anyone looking to dive into the tech world! ",
+      img: image1,
+    },
+    {
+      name: "ifediadem",
+      message:
+        "I had my first speaking engagement with Techance, it showed me how much I could give. The joy that spreads when we have our programs is evident from the smiles of our participants. Techance has a clear mission, no one should be deprived of the privilege to learn about tech",
+      img: image,
+    },
+    // Add more testimonials as needed
+  ]);
+
   return (
     <>
       <Navbar />
@@ -26,7 +43,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <svg
+        {/* <svg
           className="About__svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -36,9 +53,10 @@ export default function About() {
             fillOpacity="1"
             d="M0,0L40,37.3C80,75,160,149,240,160C320,171,400,117,480,101.3C560,85,640,107,720,122.7C800,139,880,149,960,176C1040,203,1120,245,1200,229.3C1280,213,1360,139,1400,101.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
           ></path>
-        </svg>
+        </svg> */}
 
-        <div className="about__team">
+        {/* Our team sect commented out for now */}
+        {/* <div className="about__team">
           <div className="container px-5 mb-5">
             <div className="team_content">
               <h2 className="">Our Senior Executive Team</h2>
@@ -73,7 +91,8 @@ export default function About() {
             fillOpacity="1"
             d="M0,96L40,117.3C80,139,160,181,240,197.3C320,213,400,203,480,186.7C560,171,640,149,720,144C800,139,880,149,960,176C1040,203,1120,245,1200,250.7C1280,256,1360,224,1400,208L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
           ></path>
-        </svg>
+        </svg> */}
+
         {/* <section className="kickSection__header">
           <div className="container">
             <div className="row">
@@ -105,75 +124,30 @@ export default function About() {
           data-bs-ride="carousel"
         >
           <div className="carousel-inner">
-            <div className="carousel-item active">
-              <div className="container">
-                <div className="row justify-content-center kickSection_content">
-                  <div className="col-lg-6">
-                    <div className="card">
-                      <img
-                        src={image}
-                        className="card-img-top rounded-circle mx-auto d-block Testimonial-Image"
-                        alt="Testimonial Image"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title">John Doe</h5>
-                        <p className="card-text">
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Ut consequat diam quis ex commodo, eu commodo
-                          elit accumsan. Proin auctor nulla vel dictum varius."
-                        </p>
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className={`carousel-item ${index === 0 ? "active" : ""}`}
+              >
+                <div className="container">
+                  <div className="row justify-content-center kickSection_content">
+                    <div className="col-lg-6">
+                      <div className="card">
+                        <img
+                          src={testimonial.img}
+                          className="card-img-top mx-auto d-block Testimonial-Image"
+                          alt="Testimonial Image"
+                        />
+                        <div className="card-body">
+                          <h5 className="card-title">{testimonial.name}</h5>
+                          <p className="card-text">{testimonial.message}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="carousel-item">
-              <div className="container">
-                <div className="row justify-content-center kickSection_content">
-                  <div className="col-lg-6">
-                    <div className="card">
-                      <img
-                        src={image}
-                        className="card-img-top rounded-circle mx-auto d-block Testimonial-Image"
-                        alt="Testimonial Image"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title">John Doe</h5>
-                        <p className="card-text">
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Ut consequat diam quis ex commodo, eu commodo
-                          elit accumsan. Proin auctor nulla vel dictum varius."
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="container">
-                <div className="row justify-content-center kickSection_content">
-                  <div className="col-lg-6">
-                    <div className="card">
-                      <img
-                        src={image}
-                        className="card-img-top rounded-circle mx-auto d-block Testimonial-Image"
-                        alt="Testimonial Image"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title">John Doe</h5>
-                        <p className="card-text">
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Ut consequat diam quis ex commodo, eu commodo
-                          elit accumsan. Proin auctor nulla vel dictum varius."
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
           <button
             className="carousel-control-prev"

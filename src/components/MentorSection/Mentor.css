@@ -13,7 +13,7 @@
 .mentor-background {
   margin: 0px;
   padding: 0px;
-  background: url("../../assets/ada-rect.fa0e291545af80174499.jpg.png");
+  background: url("../../assets/testimony1.jpeg");
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -22,9 +22,9 @@
 /* Media query for small screens */
 @media screen and (max-width: 912px) {
   .mentorSection__header {
-  height: 70vh;
-}
+    height: 70vh;
+  }
   .mentor-content {
     margin-bottom: 30px;
-}
+  }
 }

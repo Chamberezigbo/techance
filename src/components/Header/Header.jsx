@@ -1,9 +1,9 @@
 // import React from 'react'
 import Navbar from "../Navbar/Navbar";
 import "./Header.css";
-import imageLogo from "../../assets/Frame12.png";
+import imageLogo from "../../assets/landing.jpeg";
 import asterisk from "../../assets/Vector-yellow.png";
-import CustomButton from "../CustomButton/CustomButton";
+// import CustomButton from "../CustomButton/CustomButton";
 
 export default function Header() {
   return (
@@ -24,9 +24,9 @@ export default function Header() {
                 <p className="text-center text-lg-start">
                   So we invite you to be a part of this exciting journey.
                 </p>
-                <div className="text-center text-lg-start">
+                {/* <div className="text-center text-lg-start">
                   <CustomButton color="#5BC0EB" content="Get Started" />
-                </div>
+                </div> */}
               </div>
             </div>
 

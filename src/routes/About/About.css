@@ -55,10 +55,9 @@
 
 .Testimonial-Image {
   width: 10% !important;
-  object-fit: cover;
+  border-radius: 50% !important;
+  height: 10vh;
 }
-
-
 
 /* .kickSection__header .row {
   padding: 0px 15rem;

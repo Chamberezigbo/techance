@@ -1,7 +1,8 @@
 // import React from 'react';
 import "./offerPage.css";
-import cardImage1 from "../../assets/Frame13.png";
-import cardImage2 from "../../assets/Frame14.png";
+import cardImage1 from "../../assets/forher.jpeg";
+import cardImage2 from "../../assets/kids.jpeg";
+import cardImage3 from "../../assets/colo.jpeg";
 
 export default function OfferPage() {
   return (
@@ -17,7 +18,7 @@ export default function OfferPage() {
             education. Our mission is to bridge the digital divide, foster
             inclusivity, and inspire a new generation of tech enthusiasts.
           </p>
-          <div className="pt-5">
+          <div className="pt-5 pb-5">
             <div className="row">
               <div className="col-lg-4">
                 <div className="card-container">
@@ -57,7 +58,7 @@ export default function OfferPage() {
                 <div className="card-container">
                   {/* i need to make this card custom component  */}
                   <div className="card card-default">
-                    <img src={cardImage1} className="card-img-top" alt="..." />
+                    <img src={cardImage3} className="card-img-top" alt="..." />
                     <div className="card-body card-body__default">
                       <h5 className="card-title">Collaborate</h5>
                       <p className="card-text">

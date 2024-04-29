@@ -1,7 +1,9 @@
 // import React from 'react';
 import "./Dynamic.css";
-import cardImage1 from "../../assets/students.png";
+import cardImage1 from "../../assets/colo.jpeg";
+import cardImage from "../../assets/forher.jpeg";
 import CustomButton from "../CustomButton/CustomButton";
+import { Link } from "react-router-dom";
 
 export default function DynamicWhatComponent() {
   return (
@@ -17,10 +19,26 @@ export default function DynamicWhatComponent() {
                   <div className="card card-default-volunteer">
                     <img src={cardImage1} className="card-img-top" alt="..." />
                     <div className="card-body card-body__default-volunteer">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">Professional Growth</h5>
                       <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the cards content.
+                        Enhance skills, expand networks, and boost resumes
+                        through diverse projects.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4">
+                <div className="card-container">
+                  {/* i need to make this card custom component  */}
+                  <div className="card card-default-volunteer">
+                    <img src={cardImage} className="card-img-top" alt="..." />
+                    <div className="card-body card-body__default-volunteer">
+                      <h5 className="card-title">Social Impact</h5>
+                      <p className="card-text">
+                        Make a difference, empower individuals, and drive
+                        positive change in tech.
                       </p>
                     </div>
                   </div>
@@ -33,26 +51,10 @@ export default function DynamicWhatComponent() {
                   <div className="card card-default-volunteer">
                     <img src={cardImage1} className="card-img-top" alt="..." />
                     <div className="card-body card-body__default-volunteer">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">Community Connection</h5>
                       <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the cards content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4">
-                <div className="card-container">
-                  {/* i need to make this card custom component  */}
-                  <div className="card card-default-volunteer">
-                    <img src={cardImage1} className="card-img-top" alt="..." />
-                    <div className="card-body card-body__default-volunteer">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the cards content.
+                        Forge lasting bonds, share passions, and collaborate for
+                        a common purpose.
                       </p>
                     </div>
                   </div>
@@ -60,11 +62,13 @@ export default function DynamicWhatComponent() {
               </div>
             </div>
             <div className="text-center mt-5">
-              <CustomButton
-                style={{ fontSize: "30px", padding: "10px 50px" }}
-                color="#090446"
-                content="Get Started"
-              />
+              <Link to="https://forms.gle/eXujhtEpFRUiduff8">
+                <CustomButton
+                  style={{ fontSize: "30px", padding: "10px 50px" }}
+                  color="#090446"
+                  content="Get Started"
+                />
+              </Link>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 import "./HowComponent.css";
 import CustomButton from "../../components/CustomButton/CustomButton";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export default function HowComponent({
   image,
@@ -12,6 +13,7 @@ export default function HowComponent({
   bulletColor,
   titleColor,
   ImageWidth,
+  buttonLink,
 }) {
   return (
     <>
@@ -49,13 +51,31 @@ export default function HowComponent({
                     <p className="subtitle">{item.subtitle}</p>
                   </div>
                 ))}
-                <CustomButton color={buttonColor} content={buttonText} />
+                {buttonLink && (
+                  <Link to={buttonLink}>
+                    <CustomButton
+                      color={buttonColor}
+                      content={buttonText}
+                      link={buttonLink}
+                    />
+                  </Link>
+                )}
               </div>
             </div>
           </div>
         </div>
       </section>
-      <svg className="How__Section__header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5BC0EB" fillOpacity="1" d="M0,192L60,186.7C120,181,240,171,360,186.7C480,203,600,245,720,256C840,267,960,245,1080,202.7C1200,160,1320,96,1380,64L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+      <svg
+        className="How__Section__header__svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#5BC0EB"
+          fillOpacity="1"
+          d="M0,192L60,186.7C120,181,240,171,360,186.7C480,203,600,245,720,256C840,267,960,245,1080,202.7C1200,160,1320,96,1380,64L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+        ></path>
+      </svg>
     </>
   );
 }
@@ -74,4 +94,5 @@ HowComponent.propTypes = {
   bulletColor: PropTypes.string.isRequired,
   ImageWidth: PropTypes.string.isRequired,
   titleColor: PropTypes.string.isRequired, // Add PropTypes for titleColor
+  buttonLink: PropTypes.string,
 };

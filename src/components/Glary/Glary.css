@@ -1,26 +1,37 @@
 .glary__headerSection {
   height: 90vh;
-  background-color: #5BC0EB;
+  background-color: #5bc0eb;
   padding-top: 5rem;
 }
 
 .glary__headerSection p {
   text-align: center;
   max-width: 50rem;
-  word-wrap: break-word; 
+  word-wrap: break-word;
   margin-left: auto;
   margin-right: auto;
 }
 
 .glary-card {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('../../assets/content-students-communicating-working.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("../../assets/galary1.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  color: #ffff;
+}
+
+.glary-card-three {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("../../assets/landing.jpeg");
   background-size: cover;
   background-position: center;
   height: 50vh;
   color: #ffff;
 }
 .glary-card-one {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('../../assets/content-students-communicating-working.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("../../assets/galary2.jpeg");
   background-size: cover;
   background-position: center;
   height: 20vh;
@@ -28,13 +39,13 @@
 }
 
 .glary-card-two {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('../../assets/content-students-communicating-working.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("../../assets/colo.jpeg");
   background-size: cover;
   background-position: center;
   height: 28vh;
   color: #ffff;
 }
-
 
 /* Media query for small screens */
 @media screen and (max-width: 912px) {
@@ -46,13 +57,12 @@
     padding-right: 1rem;
     padding-top: 0px;
     height: auto;
-     margin-bottom: 0rem;
+    margin-bottom: 0rem;
   }
 
   .glary__headerSection .container {
     padding: 10px !important;
   }
-  
 
   .glary-card {
     margin-top: 20px !important;

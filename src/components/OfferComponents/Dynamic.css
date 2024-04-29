@@ -1,7 +1,6 @@
 .offerPage__volunteer__headerSection {
-  height: 90vh;
+  height: 100vh;
   background-color: #5bc0eb;
-
 }
 
 .volunteer__text {
@@ -12,26 +11,25 @@
 .card-default-volunteer {
   width: 22rem !important;
   border-radius: 1rem;
-  border: #EFE9F4 solid 3px !important;
+  border: #efe9f4 solid 3px !important;
   border-radius: 3.6rem 3.6rem 0rem 0rem !important;
 }
 
 .card-body__default-volunteer {
-  background-color: #EFE9F4 !important;
+  background-color: #efe9f4 !important;
   color: black;
 }
 
 .offerPage__headerSection__volunteer__svg {
-  background: #EFE9F4;
+  background: #efe9f4;
 }
 
 /* Media query for small screens */
 @media screen and (max-width: 912px) {
   .offerPage__volunteer__headerSection {
-  height: auto;
-  padding: 0px;
-
-}
+    height: auto;
+    padding: 0px;
+  }
   .volunteer__text {
     text-align: center;
   }
@@ -41,7 +39,6 @@
   }
 
   .card-default-volunteer {
-  width: auto !important;
-
-}
+    width: auto !important;
+  }
 }

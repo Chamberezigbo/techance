@@ -16,22 +16,22 @@ function Glary() {
             tackling that:
           </p>
 
-        <div className="row mt-5">
-          <div className="col-lg-5 glary-card d-flex flex-column justify-content-end">
-            <h5 className="card-title mb-5">Card title</h5>
-          </div>
-          <div className="col-lg-3 glary-card ms-lg-3 d-flex flex-column justify-content-end">
-            <h5 className="card-title mb-5">Card title</h5>
-          </div>
-          <div className="col-lg-3 ms-lg-3">
-            <div className="glary-card-one d-flex flex-column justify-content-end">
-              <h5 className="card-title mb-5">Card title</h5>
+          <div className="row mt-5">
+            <div className="col-lg-5 glary-card d-flex flex-column justify-content-end">
+              <h5 className="card-title mb-5">Techance Events</h5>
             </div>
-            <div className="glary-card-two mt-3 d-flex flex-column justify-content-end">
-              <h5 className="card-title mb-5">Card title</h5>
+            <div className="col-lg-3 glary-card-three ms-lg-3 d-flex flex-column justify-content-end">
+              <h5 className="card-title mb-5">Techance Events</h5>
+            </div>
+            <div className="col-lg-3 ms-lg-3">
+              <div className="glary-card-one d-flex flex-column justify-content-end">
+                <h5 className="card-title mb-5">Techance Events</h5>
+              </div>
+              <div className="glary-card-two mt-3 d-flex flex-column justify-content-end">
+                <h5 className="card-title mb-5">Techance Events</h5>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
     </>

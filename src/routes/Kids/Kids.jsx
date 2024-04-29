@@ -3,7 +3,7 @@
 import HeaderKids from "../../components/Header/DynamicHeader";
 import Navbar from "../../components/Navbar/Navbar";
 import imageLogo from "../../assets/Vector.png";
-import secondImage from "../../assets/kids.png";
+import secondImage from "../../assets/kids.jpeg";
 import DynamicOffer from "../../components/OfferComponents/DynamicOffer";
 import HowComponent from "../../components/HowComponent/HowComponent";
 import howComponentImage from "../../assets/kids-learning-about-universe1.png";
@@ -24,7 +24,7 @@ function Kids() {
         sectionColor="#5BC0EB"
         buttonColor="#090446"
         textColor="#E03616"
-        ImageWidth="500"
+        ImageWidth="420"
         svgColor="#5BC0EB"
       />
       <DynamicOffer
@@ -74,14 +74,15 @@ function Kids() {
           },
           {
             question: "Parental Involvement?",
-            title: "Parents are encouraged to participate in workshops, attend parent-teacher meetings, and engage in discussions about their child's progress.",
+            title:
+              "Parents are encouraged to participate in workshops, attend parent-teacher meetings, and engage in discussions about their child's progress.",
             content:
               "Resources such as informative sessions, webinars, and online forums will be available for parents to learn more about technology education and how to support their child's learning at home.",
           },
           // Add more questions as needed
         ]}
       />
-      <Footer/>
+      <Footer />
     </>
   );
 }

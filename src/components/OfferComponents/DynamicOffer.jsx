@@ -2,12 +2,14 @@
 import CustomButton from "../CustomButton/CustomButton";
 import PropTypes from "prop-types";
 import "./DynamicOffer.css";
+import { Link } from "react-router-dom";
 
 export default function DynamicOffer({
   title,
   subtitle,
   buttonColor,
   coloredText,
+  buttonLink,
 }) {
   // Find the index of 'Techance' in the title
   const techanceIndex = title.indexOf("Techance");
@@ -30,15 +32,30 @@ export default function DynamicOffer({
           <div className="text-center">
             {" "}
             {/* Added a wrapper with the 'text-center' class */}
-            <CustomButton
-              style={{ fontSize: "30px", padding: "10px 50px" }}
-              color={buttonColor}
-              content="Get Started"
-            />
+            {buttonLink && (
+              <Link to={buttonLink}>
+                <CustomButton
+                  style={{ fontSize: "30px", padding: "10px 50px" }}
+                  color={buttonColor}
+                  content="Get Started"
+                  link={buttonLink}
+                />
+              </Link>
+            )}
           </div>
         </div>
       </section>
-      <svg className="DynamicOfferPage__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#EFE9F4" fillOpacity="1" d="M0,96L40,117.3C80,139,160,181,240,197.3C320,213,400,203,480,186.7C560,171,640,149,720,144C800,139,880,149,960,176C1040,203,1120,245,1200,250.7C1280,256,1360,224,1400,208L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+      <svg
+        className="DynamicOfferPage__svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#EFE9F4"
+          fillOpacity="1"
+          d="M0,96L40,117.3C80,139,160,181,240,197.3C320,213,400,203,480,186.7C560,171,640,149,720,144C800,139,880,149,960,176C1040,203,1120,245,1200,250.7C1280,256,1360,224,1400,208L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+        ></path>
+      </svg>
     </>
   );
 }
@@ -47,4 +64,5 @@ DynamicOffer.propTypes = {
   subtitle: PropTypes.string.isRequired,
   buttonColor: PropTypes.string.isRequired,
   coloredText: PropTypes.string.isRequired,
+  buttonLink: PropTypes.string,
 };
