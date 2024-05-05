@@ -11,10 +11,9 @@ function WhatComponents() {
           <p className="text-center">
             <span>{'"'}</span>
             <br />
-            According to Data from Accenture the ration of woman to men in roles
-            has declined in the past 35 years
+            Women are the largest untapped reservoir of talent in the world.
             <br />
-            <span className="quote-holder">Leonardo Davinici</span>
+            <span className="quote-holder">Hillary Clinton</span>
             <br />
             <span className="quote-sable">*</span>
           </p>

@@ -116,7 +116,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0px;
-    height: 50vh;
+    height: auto;
     margin-bottom: 0rem;
   }
   .kickSection__header .row {
@@ -128,5 +128,11 @@
   }
   .kickSection__image-section-parent1 {
     display: none; /* Hide on small screens */
+  }
+
+  .Testimonial-Image {
+    width: 10% !important;
+    border-radius: 50% !important;
+    height: 5vh;
   }
 }
