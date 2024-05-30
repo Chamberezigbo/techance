@@ -1,7 +1,8 @@
 .whatSection__headerSection {
   height: 20vh;
   padding-bottom: 10rem;
-  background: #5bc0eb;
+  background: #0b0e46;
+  color: white;
 }
 
 .whatSection__HeaderSection p {
@@ -29,7 +30,7 @@
 
 .visionSection__header {
   background: #efe9f4;
-  height: 50vh;
+  height: 30vh;
 }
 
 .visionSection__header .card-container {

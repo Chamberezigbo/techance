@@ -1,6 +1,6 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import footerLogo from "../../assets/Logo.png";
+import footerLogo from "../../assets/mainlogo.png";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";

@@ -1,7 +1,7 @@
 // import React from "react";
 import "./Mentor.css";
-import CustomButton from "../CustomButton/CustomButton";
-import { Link } from "react-router-dom";
+// import CustomButton from "../CustomButton/CustomButton";
+// import { Link } from "react-router-dom";
 
 function MentorSection() {
   return (
@@ -17,9 +17,9 @@ function MentorSection() {
               Build confidence as a leader,grow your network and define your
               legacy
             </p>
-            <Link to="/volunteers">
+            {/* <Link to="/volunteers">
               <CustomButton color="#FEFEFE" content="Become a mentor" />
-            </Link>
+            </Link> */}
           </div>
 
           <div className="col-lg-3 mentor-background"></div>

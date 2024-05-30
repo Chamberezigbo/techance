@@ -9,7 +9,7 @@ function Dropdown() {
         <div className="container">
           <div className="d-flex justify-content-center pt-5">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-4">
                 <Link className="nav-link" to="/kids">
                   <div className="container-kids pt-2">
                     <h5>
@@ -20,7 +20,7 @@ function Dropdown() {
                   </div>
                 </Link>
               </div>
-              <div className="col-lg-6 mt-lg-0 mt-3">
+              <div className="col-lg-4 mt-lg-0 mt-3">
                 <Link className="nav-link" to="/her">
                   <div className="container-her ms-lg-3 pt-2">
                     <h5 className="text-danger">
@@ -30,10 +30,19 @@ function Dropdown() {
                   </div>
                 </Link>
               </div>
+
+              <div className="col-lg-4 mt-lg-0 mt-3">
+                <Link className="nav-link" to="/volunteers">
+                  <div className="container-volunteer pt-2">
+                    <h5 className="text-warning">Volunteer</h5>
+                    <h6>Help us to help people</h6>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
 
-          <div className="d-flex justify-content-center pt-2">
+          {/* <div className="d-flex justify-content-center pt-2">
             <div className="row">
               <div className="col-lg-6">
                 <Link className="nav-link" to="/volunteers">
@@ -53,7 +62,7 @@ function Dropdown() {
               </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

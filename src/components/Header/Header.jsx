@@ -1,9 +1,13 @@
-// import React from 'react'
+// Import necessary modules and styles
+// import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Header.css";
-import imageLogo from "../../assets/landing.jpeg";
-import asterisk from "../../assets/Vector-yellow.png";
-// import CustomButton from "../CustomButton/CustomButton";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import { Carousel } from "react-responsive-carousel";
+import image1 from "../../assets/img1.jpeg";
+import image2 from "../../assets/img2.jpeg";
+import image3 from "../../assets/img3.jpeg";
+import image4 from "../../assets/img5.jpeg";
 
 export default function Header() {
   return (
@@ -30,12 +34,27 @@ export default function Header() {
               </div>
             </div>
 
-            <div className="col-lg-6 ">
+            <div className="col-lg-6">
               <div className="image-section-parent1">
-                <img src={asterisk} alt="Your Alt Text" width={500} />
-              </div>
-              <div className="image-section-parent">
-                <img src={imageLogo} alt="Your Alt Text" width={400} />
+                <Carousel
+                  showThumbs={false}
+                  autoPlay
+                  interval={3000}
+                  infiniteLoop
+                >
+                  <div>
+                    <img src={image1} alt="Slide 1" />
+                  </div>
+                  <div>
+                    <img src={image2} alt="Slide 2" />
+                  </div>
+                  <div>
+                    <img src={image3} alt="Slide 3" />
+                  </div>
+                  <div>
+                    <img src={image4} alt="Slide 3" />
+                  </div>
+                </Carousel>
               </div>
             </div>
           </div>

@@ -19,18 +19,7 @@ function WhatComponents() {
           </p>
         </div>
       </section>
-      <svg
-        className="whatSection__headerSection__svg"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#5bc0eb"
-          fillOpacity="1"
-          d="M0,32L60,48C120,64,240,96,360,101.3C480,107,600,85,720,69.3C840,53,960,43,1080,69.3C1200,96,1320,160,1380,192L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-        ></path>
-      </svg>
-      <section className="visionSection__header">
+      <section className="visionSection__header pt-5">
         <div className="container">
           <div className="row align-items-stretch">
             {/* <div className="col-lg-6">

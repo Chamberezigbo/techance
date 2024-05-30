@@ -17,7 +17,7 @@
   text-align: left;
 }
 .image-section-parent1 {
-  margin-top: -7rem;
+  margin-top: 0rem;
 }
 
 .image-section-parent {
@@ -27,7 +27,7 @@
   transform: translate(-50%, -50%);
 }
 .svg {
-  background: #EFE9F4;
+  background: #efe9f4;
 }
 
 @media (max-width: 1092px) {

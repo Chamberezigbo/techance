@@ -1,5 +1,5 @@
 .offerPage__headerSection {
-  height: 90vh;
+  height: 110vh;
   background-color: #efe9f4;
 }
 
@@ -14,18 +14,18 @@
 .card-default {
   width: 22rem !important;
   border-radius: 1rem;
-  border: #5bc0eb solid 3px !important;
+  border: #0b0e46 solid 3px !important;
   border-radius: 3.6rem 3.6rem 0rem 2rem !important;
 }
 .card-img-top {
   height: 55vh;
   object-fit: cover;
   border-radius: 1rem;
-  border: #5bc0eb solid 3px !important;
+  border: #0b0e46 solid 3px !important;
   border-radius: 3.6rem 3.6rem 0rem 2rem !important;
 }
 .card-body__default {
-  background-color: #5bc0eb !important;
+  background-color: #0b0e46 !important;
   border-radius: 2rem 0rem 0rem 1.5rem !important;
 }
 
@@ -39,9 +39,9 @@
   background-color: #e03616 !important;
   border-radius: 2rem 0rem 0rem 1.5rem !important;
 }
-.offerPage__headerSection__svg {
-  background: #5bc0eb;
-}
+/* .offerPage__headerSection__svg {
+  background: #0b0e46;
+} */
 
 /* Media query for small screens */
 @media screen and (max-width: 912px) {
